@@ -20,6 +20,7 @@ This is a portfolio website showcasing my projects and contact information. The 
 
 ![Home Page](screenshots/ss1.png)
 *Home Page*
+page link https://nithinsaichoudary.github.io/Oasis-task2-portfolio/
 
 
 ## Getting Started
