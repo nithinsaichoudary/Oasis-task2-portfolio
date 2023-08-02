@@ -65,6 +65,7 @@ body{
 		.letter {
 			transition: ease-out 1s;
 			transform: translateY(40%);
+            
 		}
 		&:hover {
 			.letter {
@@ -157,94 +158,104 @@ a{
 .button3:hover {
     background-color: rgba(89, 196, 239, 0.635);
 }
-.footer {
-    background-color: #f9fafa;
-    padding: 20px;
-    text-align: center;
+.container{
+    width: 1170px;
+    margin:auto;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 100px 0px;
+    width: 100%;
     position: absolute;
-    top: 800px;
-    border: solid rgba(0, 0, 0, 0.224) 1px;
-    width: 97.28%;
+    top: 900px;
+}
+.footer-col{
+    width: 30%;
+    padding: 0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}  
+.logo1{
+    width: 100px;
     height: 100px;
 }
-
-.footer-content {
-    font-size: 14px;
-    color: #666;
-}
-.ph{
-    font-size: 20px;
-    position: absolute;
-    top: 0px;
-    left:50px;
-    color: black;
-}
-.p3{
-    position: absolute;
-    left:45px;
-    top:66px;
-}
-.eh{
-    font-size: 20px;
-    position: absolute;
-    top: 0px;
-    left:450px;
-    color: black;
-}
-.mail{
-    position: absolute;
-    top: 77px;
-    left: 450px;
-    font-size: 16px;
-    font-weight: 300;
-}
-.fh{
-    font-size: 20px;
-    position: absolute;
-    top: 0px;
-    left:900px;
-    color: black;
-}
-.social1{
-    width: 50px;
-    position: absolute;
-    top: 70px;
-    left: 890px;
-}
-.social2{
-    width: 50px;
-    position: absolute;
-    top: 70px;
-    left: 950px;
-}
-.copy{
-    position: absolute;
-    left: 1350px;
-    top: 100px;
-}
-.ph,
-.eh,
-.fh{
-    margin-top: 30px;
-}
-
 
 
 /* Media queries for mobile screens */
 @media (max-width: 768px) {
     .pimg {
-        left: 40px;
-        top: 100px;
+        left: 140px;
+        top: 120px;
     }
     .img1{
-        width: 50%;
+        width: 60%;
         border-radius: 500px;
     }
-
     .text1 {
         top: 250px;
-        left: 20px;
+        left: 110px;
         text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 900;
     }
 
     .text2 {
@@ -262,9 +273,14 @@ a{
     .button1,
     .button2,
     .button3 {
-        width: 100%;
-        height: 70px;
-        margin-bottom: 15px;
+        padding: 10px 20px;
+        border-radius: 80px;
+        font-size: 16px;
+        width: 120px;
+        height: 120px;
+        margin-right: 15px;
+        font-size: 20px;
+        font-weight: 600;
     }
     .text {
         font-family: "Poppins", sans-serif;;
@@ -280,9 +296,9 @@ a{
         color: black;
     
         .wrapper {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
             .letter {
                 transition: ease-out 1s;
                 transform: translateY(40%);
@@ -298,7 +314,14 @@ a{
             }
         }
     }
+    .p2{
+        width: 110%;
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
 }
+
 /* Media queries for screens with a width of 1600px or larger */
 
 @media (min-width: 1600px) {
